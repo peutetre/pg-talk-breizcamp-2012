@@ -1,0 +1,186 @@
+* {
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+@font-face {
+  font-family: 'Russo One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Russo One'), local('RussoOne-Regular'), url('../vendor/russoone.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Doppio One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Dopio One'), local('DopioOne-Regular'), url('../vendor/doppio.woff') format('woff');
+}
+
+html {
+    font-family: 'Doppio One', sans-serif;
+    min-height:100%;
+}
+
+body {
+    color: #444;
+    width:100%;
+    height:100%;
+    background:url("../images/pgday2012.jpeg") no-repeat bottom left fixed;
+    background-color:rgba(219, 222, 220, 0.8);
+    -webkit-transition:opacity 200ms ease-in;
+}
+
+.container {
+    position:relative;
+    margin:auto;
+    width:800px;
+    height:600px;
+}
+
+section.slide {
+    padding:0 10px;
+    position:absolute;
+    width:800px;
+    height:600px;
+    min-height:600px;
+    opacity:0;
+    text-align:center;
+    -webkit-background-clip:text;
+    text-shadow: 2px 2px 10px #8A8A8A;
+}
+
+.slide h1 {
+    font-family: 'Russo One', sans-serif;
+    text-align:center;
+    margin: 80px 0 40px 0;
+    font-size:120px;
+}
+
+.slide h2 {
+    font-family: "Ronnia", Helvetica, arial, Serif;
+    text-align:center;
+    margin:80px 0 0 0;
+    font-size:60px;
+}
+
+.slide h3 {
+    font-family: "Ronnia", Helvetica, arial, Serif;
+    text-align:center;
+    margin:80px 0 0 0;
+    font-size:50px;
+}
+
+.slide ul {
+    list-style: none;
+    margin-top:130px;
+    color: rgb(234, 94,31);
+    font-size: 30px;
+}
+
+.slide li {
+    margin:70px 0;
+}
+
+#status {
+    position:absolute;
+    bottom:5px;
+    text-align:center;
+    width:100%;
+    z-index:0;
+    opacity:0.3;
+}
+
+a.normal {
+    color:#444;
+    text-decoration: none;
+}
+
+a.normal:hover {
+    color:#fff;
+}
+
+.slide p {
+    font-size: 40px;
+}
+
+.slide p.big {
+    font-size: 50px;
+}
+
+.only-title h1, .only-title h2{
+    margin-top:250px;
+}
+
+.slide h2.only, h3.only{
+    margin: 300px 0px auto;
+}
+
+.slide img.only{
+    margin: 100px auto;
+}
+
+.slide p.only{
+    margin: 200px auto;
+}
+
+.no {
+    box-shadow:none;
+}
+
+.small,a.small{
+    text-decoration: none;
+    font-family: "Ronnia", Helvetica, arial, Serif;
+    text-align:center;
+    margin:20px 0 0 0;
+    font-size:40px;
+    color: #fff
+}
+a.small:hover{
+    color: #531f07;
+}
+
+.indent, .indent a{
+    color: #444;
+}
+
+.indent a:hover{
+    color: #fff;
+}
+
+/**
+ * Talk specific
+ *
+ */
+
+.t-shells div{
+    width:800px;
+    margin:0 auto;
+}
+.t-shells div img.only{
+    float:left;
+    margin-top:50px;
+}
+.t-shells div img:first-child{
+    padding:40px 0 0 0;
+}
+
+pre {
+    text-align:left;
+    background-color: #073642;
+    color:white;
+    font-size:30px;
+    padding:5px;
+    text-shadow:none;
+    margin:100px 0 0 0;
+}
+.lnr { color: #586e75; background-color: #073642; }
+.Comment { color: #586e75; font-style: italic; }
+.Identifier { color: #268bd2; }
+.Constant { color: #2aa198; }
+.Statement { color: #719e07; }
+
+.credits p {
+    text-align:left;
+}
